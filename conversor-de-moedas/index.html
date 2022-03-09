@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Moedas | ImersãoDev</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="div-background">
+    <div class="container">
+      <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo"
+          alt="">
+      </a>
+    </div>
+    <br>
+
+    <div class="div-moedas" id="div-app">
+      <h4 class="caption1">Cotação de Moedas (em Reais)</h4>
+
+      <div class="div-cotacao">
+        <div id="moedas">
+          <div class="div-moeda">
+            <h4 class="label-moeda">Dólar Americano (USD)</h4><br>
+            <input class="input is-rounded" type="number" class="input-moeda" id="input-dolar"
+              oninput="trataInput(this)" readonly>
+          </div>
+          <div class="div-moeda">
+            <h4 class="label-moeda">Euro (EUR)</h4><br>
+            <input type="number" class="input is-rounded" id="input-euro" oninput="trataInput(this)" readonly>
+          </div>
+          <div class="div-moeda">
+            <h4 class="label-moeda">Bitcoin (BTC)</h4><br>
+            <input type="number" class="input is-rounded" id="input-bitcoin" oninput="trataInput(this)" readonly>
+          </div>
+        </div>
+        <div class="botao-cotacao">
+          <button class="button is-light is-small is-rounded is-outlined" type="submit" onclick="getOnline()">Obter
+            Cotação Online</button>
+        </div>
+      </div>
+
+      <div class="div-cotacao" id="div-conversor">
+        <br>
+        <h4 class="caption2">Conversão de Moedas</h4>
+
+        <div class="div-conv-src">
+
+          <div class="div2">
+
+            <input type="number" class="input is-rounded" id="quantidade" placeholder="Quantidade"
+              oninput="converterMoedas()">
+          </div>
+
+          <div class="div3" id="div-coin-src">
+            <div class="select">
+              <select class="input is-rounded" name="src-coin" id="src-coin" onchange="converterMoedas()">
+                <option value="real">Real (BRL)</option>
+                <option value="dolar">Dólar Americano (USD)</option>
+                <option value="euro">Euro (EUR)</option>
+                <option value="bitcoin">Bitcoin (BTC)</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="div-resultado">
+          <div id="agrup">
+            <div class="line">
+              <h4 class="lbl-result"> Real (BRL):</h4>
+              <h4 class="price-result" id="result-brl"></h4>
+            </div>
+            <div class="line">
+              <h4 class="lbl-result"> Dólar Americano (USD):</h4>
+              <h4 class="price-result" id="result-usd"></h4>
+            </div>
+            <div class="line">
+              <h4 class="lbl-result"> Euro (EUR):</h4>
+              <h4 class="price-result" id="result-eur"></h4>
+            </div>
+            <div class="line">
+              <h4 class="lbl-result"> Bitcoin (BTC):</h4>
+              <h4 class="price-result" id="result-btc"></h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

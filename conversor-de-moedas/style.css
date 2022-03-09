@@ -1,0 +1,237 @@
+body {
+  font-family: "Ubuntu", monospace;
+  text-align: center;
+  background-color: #0000D7;
+  width: 100%;
+}
+
+.div-background {
+  background-color: rgba(54, 54, 54, 0.5);
+  width: 100%;
+  margin: 0px 0px 0px;
+  border-radius: 8px;
+  padding-bottom: 20px;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.div-title {
+  display: inline-block;
+  width: 350px;
+  height: 55px;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 20px 5px 0px;
+  border-radius: 8px;
+}
+
+.page-title {
+  color: #ffd700;
+  opacity: 0.8;
+  font-size: 36px;
+  margin: 6px 0px 0px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 250px;
+}
+
+body>img {
+  margin: 0 10px;
+}
+
+img {
+  max-height: 250px;
+}
+
+.div-moedas {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#div-app {
+  margin-bottom: 20px;
+  font-family: 'Play', sans-serif;
+}
+
+.caption1 {
+  color: #ffffff;
+  font-variant: small-caps;
+  font-size: 20px;
+  margin: 20px 5px 0px;
+}
+
+.div-cotacao {
+  width: 95%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-left: 2.5%;
+  margin-top: 18px;
+  border-radius: 8px;
+  padding-bottom: 20px;
+}
+
+.botao-cotacao {
+  padding-top: 100px;
+}
+
+#moedas {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0px 0px 0px;
+}
+
+.div-moeda {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  width: 220px;
+  height: 35px;
+  margin: 20px 20px 0px;
+  border-radius: 8px;
+}
+
+.label-moeda {
+  color: #c0c0c0;
+  font-size: 12px;
+  margin: 10px 0px 5px;
+}
+
+.input-moeda {
+  color: #0000cd;
+  text-align: right;
+  font-weight: bold;
+  width: 75%;
+  border-radius: 4px;
+  height: 20px;
+}
+
+#btn-get-online {
+  background-color: #c0c0c0;
+  color: #da1e26;
+  font-weight: bold;
+  padding: 10px 5px;
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+#div-conversor {
+  height: auto;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.caption2 {
+  color: #ffffff;
+  font-variant: small-caps;
+  font-size: 20px;
+  margin: 0px 5px 0px;
+}
+
+.div-conv-src {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  margin: 20px 20px 0px;
+  border-radius: 8px;
+}
+
+.div2 {
+  display: flex;
+  margin: 40px 30px 0px;
+
+}
+
+.div3 {
+  display: flex;
+  margin: 30px 30px 0px;
+
+}
+
+label {
+  color: #c0c0c0;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+#div-coin-src {
+  padding-top: 2px;
+}
+
+#src-coin {
+  width: 200px;
+}
+
+.input-conv {
+  color: #0000cd;
+  font-weight: bold;
+  border-radius: 4px;
+  width: 180px;
+  height: 25px;
+}
+
+#quantidade {
+  text-align: right;
+  height: 20px;
+
+}
+
+.div-resultado {
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 20px 20px 0px;
+  border-radius: 8px;
+}
+
+#result-title {
+  font-size: 16px;
+  padding-top: 30px;
+}
+
+#agrup {
+  display: inline-block;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  width: 520px;
+}
+
+.line {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.lbl-result {
+  color: #DA1E26;
+  opacity: 0.8;
+  width: 260px;
+
+  font-size: 16px;
+  text-align: left;
+  margin: 15px 5px 0px;
+}
+
+.price-result {
+  color: #ffffff;
+  font-size: 16px;
+  text-align: right;
+  width: 250px;
+  margin: 15px 5px 0px;
+}
